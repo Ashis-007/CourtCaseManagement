@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register Yourself!</h1>
+      <!-- Name -->
+      <input id="firstName" type="text" placeholder="First Name" required />
+      <input id="lastName" type="text" placeholder="Last Name" required />
+      <br />
+
+      <!-- Gender -->
+      <div id="gender">
+        <br />
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <br />
+
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <br />
+
+        <input type="radio" name="gender" id="other" />
+        <label for="other">Other</label>
+        <br />
+      </div>
+
+      <!-- Contact info -->
+      <div>
+        <br />
+        <input id="email" type="email" placeholder="Email id" required />
+        <br />
+        <input id="number" type="text" placeholder="Contact Number" required />
+      </div>
+      <!-- Address -->
+      <div id="address">
+        <br />
+        <input id="city" type="text" placeholder="City" required />
+        <input id="state" type="text" placeholder="State" required />
+        <br />
+      </div>
+
+      <!-- Login credentials -->
+      <br />
+      <div id="loginInfo">
+        <input id="userName" type="text" placeholder="Username" required />
+        <br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          minlength="8"
+          maxlength="20"
+          required
+        />
+        <br />
+        <input
+          type="password"
+          id="r_password"
+          placeholder="Repeat Password"
+          minlength="8"
+          maxlength="20"
+          required
+        />
+      </div>
+      <br />
+      <input type="checkbox" id="TC" required />
+      <label for="TC">I agree to the terms and conditions</label>
+      <br />
+      <br />
+      <input type="submit" />
+    </div>
+  </body>
+</html>
