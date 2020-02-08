@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Register</title>
+    <link rel="stylesheet" href="../css/signup.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>Register Yourself!</h1>
+      <h1>Enter Your Credentials Here</h1>
+      <br />
 
       <!-- Name -->
       <div class="form-row">
@@ -85,7 +95,7 @@
       </div>
 
       <!-- Address -->
-      <div class="form-row" id="address">
+      <div class="form-group" id="address">
         <br />
         <div class="col-4">
           <input
@@ -98,6 +108,7 @@
         </div>
 
         <div class="col-4">
+          <br />
           <input
             class="form-control"
             id="state"
@@ -157,10 +168,17 @@
         <br />
       </div>
 
-      <button class="btn btn-primary " type="submit" onclick="getInfo()">
+      <button
+        class="btn btn-primary "
+        type="submit"
+        onclick="getInfo()"
+        id="submit"
+      >
         Submit
       </button>
     </div>
+    <br />
+    <br />
     <script src="../js/myScript.js"></script>
   </body>
 </html>

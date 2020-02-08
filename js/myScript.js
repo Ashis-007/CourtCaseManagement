@@ -2,15 +2,6 @@ function getInfo() {
   let fName = document.getElementById("firstName").value;
   let lName = document.getElementById("lastName").value;
 
-  let email = document.getElementById("email").value;
-  let number = document.getElementById("number").value;
-
-  let city = document.getElementById("city").value;
-  let state = document.getElementById("state").value;
-
-  let userName = document.getElementById("userName").value;
-  let password = document.getElementById("password").value;
-
   if (validateInfo(fName, lName, number)) {
     //add to database
   } else {
