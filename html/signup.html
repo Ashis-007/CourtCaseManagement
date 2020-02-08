@@ -15,13 +15,36 @@
   <body>
     <div class="container">
       <h1>Register Yourself!</h1>
+
       <!-- Name -->
-      <input id="firstName" type="text" placeholder="First Name" required />
-      <input id="lastName" type="text" placeholder="Last Name" required />
-      <br />
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <input
+            id="firstName"
+            class="form-control form-row"
+            type="text"
+            placeholder="First Name"
+            required
+          />
+        </div>
+
+        <div class="form-group col-md-4">
+          <input
+            id="lastName"
+            class="form-control"
+            type="text"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+
+        <br />
+      </div>
 
       <!-- Gender -->
-      <div id="gender">
+      <div class="form-group" id="gender">
+        <br />
+        <label for="gender">Gender: </label>
         <br />
         <input type="radio" name="gender" id="male" />
         <label for="male">Male</label>
@@ -37,49 +60,107 @@
       </div>
 
       <!-- Contact info -->
-      <div>
+      <div class="form-group">
         <br />
-        <input id="email" type="email" placeholder="Email id" required />
+        <div class="col-4">
+          <input
+            class="form-control"
+            id="email"
+            type="email"
+            placeholder="Email id"
+            required
+          />
+        </div>
+
         <br />
-        <input id="number" type="text" placeholder="Contact Number" required />
+        <div class="col-4">
+          <input
+            class="form-control"
+            id="number"
+            type="text"
+            placeholder="Contact Number"
+            required
+          />
+        </div>
       </div>
+
       <!-- Address -->
-      <div id="address">
+      <div class="form-row" id="address">
         <br />
-        <input id="city" type="text" placeholder="City" required />
-        <input id="state" type="text" placeholder="State" required />
+        <div class="col-4">
+          <input
+            class="form-control"
+            id="city"
+            type="text"
+            placeholder="City"
+            required
+          />
+        </div>
+
+        <div class="col-4">
+          <input
+            class="form-control"
+            id="state"
+            type="text"
+            placeholder="State"
+            required
+          />
+        </div>
+
         <br />
       </div>
 
       <!-- Login credentials -->
       <br />
-      <div id="loginInfo">
-        <input id="userName" type="text" placeholder="Username" required />
+      <div class="form-group" id="loginInfo">
+        <div class="col-4">
+          <input
+            id="userName"
+            class="form-control"
+            type="text"
+            placeholder="Username"
+            required
+          />
+        </div>
+
         <br />
-        <input
-          type="password"
-          id="password"
-          placeholder="Password"
-          minlength="8"
-          maxlength="20"
-          required
-        />
+        <div class="col-4">
+          <input
+            class="form-control"
+            type="password"
+            id="password"
+            placeholder="Password"
+            minlength="8"
+            maxlength="20"
+            required
+          />
+        </div>
+
         <br />
-        <input
-          type="password"
-          id="r_password"
-          placeholder="Repeat Password"
-          minlength="8"
-          maxlength="20"
-          required
-        />
+        <div class="col-4">
+          <input
+            class="form-control"
+            type="password"
+            id="r_password"
+            placeholder="Repeat Password"
+            minlength="8"
+            maxlength="20"
+            required
+          />
+        </div>
       </div>
       <br />
-      <input type="checkbox" id="TC" required />
-      <label for="TC">I agree to the terms and conditions</label>
-      <br />
-      <br />
-      <input type="submit" />
+      <div class="form-group">
+        <input type="checkbox" id="TC" required />
+        <label for="TC">I agree to the terms and conditions</label>
+        <br />
+        <br />
+      </div>
+
+      <button class="btn btn-primary " type="submit" onclick="getInfo()">
+        Submit
+      </button>
     </div>
+    <script src="../js/myScript.js"></script>
   </body>
 </html>
