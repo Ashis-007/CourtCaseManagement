@@ -1,0 +1,23 @@
+body {
+  background-image: url("../resources/about-us.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position-y: 10%;
+}
+.container {
+  color: #000000;
+}
+.heading {
+  font-family: "Russo One", sans-serif;
+}
+.paraH {
+  font-family: "Lobster", cursive;
+}
+
+.para {
+  font-family: "Bitter", serif;
+}
+#contactUs {
+  padding-top: 15%;
+}
